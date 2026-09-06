@@ -8,10 +8,7 @@ load_dotenv()
 app = FastAPI()
 
 API_KEY = os.getenv("API_KEY")
-USERNAME = os.getenv("USERNAME")
-SECRET_KEY = os.getenv("SECRET_KEY")
 TEST_TABLE = os.getenv("TEST_TABLE", "test_users")
-FLAG = os.getenv("FLAG")
 
 
 @app.get("/api/v1/health")
