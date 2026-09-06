@@ -39,3 +39,10 @@ def get_data(x_api_key: str = Header(default="")):
 @app.get("/api/v1/info")
 def info():
     return {"service": "user-service", "environment": "staging", "version": "1.2.0"}
+
+
+@app.get("/api/v1/users/{user_id}")
+def get_user(user_id: int):
+    # TODO: fetch user by ID
+
+    return {"id": user_id, "status": "not implemented"}
