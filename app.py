@@ -34,3 +34,8 @@ def get_data(x_api_key: str = Header(default="")):
     connection.close()
 
     return {"status": "ok"}
+
+
+@app.get("/api/v1/info")
+def info():
+    return {"service": "user-service", "environment": "staging", "version": "1.2.0"}
