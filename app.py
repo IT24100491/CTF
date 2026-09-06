@@ -1,4 +1,5 @@
 import os
+import sqlite3
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, Header, HTTPException
@@ -25,7 +26,11 @@ def get_data(x_api_key: str = Header(default="")):
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
 
-    # TODO: add database connection
+    connection = sqlite3.connect("staging.db")
+    connection.row_factory = sqlite3.Row
+
     # TODO: fetch data from TEST_TABLE
+
+    connection.close()
 
     return {"status": "ok"}
