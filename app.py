@@ -41,7 +41,7 @@ def info():
     return {"service": "user-service", "environment": "staging", "version": "1.2.0"}
 
 
-@app.get("/api/v1/users/{user_id}")
+@app.get("/api/v1/users")
 def get_user(user_id: int):
     # TODO: fetch user by ID
 
