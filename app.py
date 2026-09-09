@@ -42,7 +42,7 @@ def info():
 
 
 @app.get("/api/v1/users")
-def get_user(user_id: int):
-    # TODO: fetch user by ID
+def get_user():
+    # TODO: fetch users
 
-    return {"id": user_id, "status": "not implemented"}
+    return {""}
