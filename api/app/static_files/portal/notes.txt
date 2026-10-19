@@ -1,0 +1,4 @@
+Staging notes
+-------------
+Remember to rotate the staging DB credentials before the Q3 audit.
+The old reporting dashboard is deprecated, use the new one instead.

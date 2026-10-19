@@ -1,0 +1,5 @@
+Employee Handbook (excerpt)
+----------------------------
+Section 4: Acceptable use of staging systems.
+Staging environments are for internal testing only. Do not store production
+data here. Report suspicious activity to IT Operations.
